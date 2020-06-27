@@ -1,0 +1,43 @@
+name: Publish Android App to Play Store
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release-android:
+    name: Build and release Android App
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+
+      - name: Install Fastlane
+        run: cd android && gem install bundler && bundle install
+
+      - name: Install packages
+        run: yarn install
+
+      - name: Create google-service file (Firebase)
+        run: 'echo "$GOOGLE_SERVICES_JSON" > android/app/google-services.json'
+        shell: bash
+        env:
+          GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
+
+      - name: Create google-account-service file (Google Play)
+        run: 'echo "$GOOGLE_SERVICE_ACCOUNT_JSON" > android/api-google-service-account.json'
+        shell: bash
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+
+
+      - name: Test fastlane
+        run: cd android && fastlane test
