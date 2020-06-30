@@ -3,7 +3,7 @@ name: Publish Android App to Play Store
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
   release-android:
@@ -20,7 +20,7 @@ jobs:
         with:
           ruby-version: '2.6'
 
-      - name: Install Fastlane
+      - name: Install Fastlane & screengrab
         run: cd android && gem install bundler && bundle install
 
       - name: Install packages
