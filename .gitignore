@@ -1,3 +1,6 @@
+# VSCode
+.history
+
 # OSX
 #
 .DS_Store
@@ -58,5 +61,8 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
-# Fastlane
+# Android
 android/api-google-service-account.json
+android/app/google-services.json
+android/app/upload-key.keystore
+*.keystore

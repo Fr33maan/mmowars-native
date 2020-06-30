@@ -1,4 +1,4 @@
-name: Publish Android App to Play Store
+name: Test and build Android App
 
 on:
   push:
@@ -38,6 +38,17 @@ jobs:
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
 
+      - name: Create the keystore binary from hex dump
+        run: 'echo "$KEYSTORE_HEX" | xxd -r - android/app/mmowars-upload-key.keystore'
+        shell: bash
+        env:
+          KEYSTORE_HEX: ${{ secrets.KEYSTORE_HEX }}
 
-      - name: Test fastlane
-        run: cd android && fastlane test
+      - name: Add password to gradle file
+        run: 'sed -i "s/KEYSTORE_PASSWORD/$KEYSTORE_PASSWORD/" android/gradle.properties'
+        shell: bash
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+
+      - name: Build app with fastlane and sign it
+        run: cd android && fastlane android build_release
