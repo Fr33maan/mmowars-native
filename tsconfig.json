@@ -1,0 +1,23 @@
+{
+  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
+  "compilerOptions": {
+    "jsx": "react-native",
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "noUnusedLocals": true,
+    "module": "es6",
+    "target": "es5",
+    "moduleResolution": "node",
+    "types": [
+      "jest",
+      "cypress"
+    ],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": "./projects",
+    "paths": {}
+  }
+}
