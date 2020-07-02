@@ -1,6 +1,7 @@
 package com.mmowars;
 
-
+// https://developer.android.com/reference/androidx/packages
+// https://developer.android.com/reference/androidx/test/packages
 import androidx.test.filters.SmallTest;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -15,9 +16,10 @@ import org.junit.runner.RunWith;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+// http://junit.sourceforge.net/javadoc/org/junit/Assert.html#assertThat(T,%20org.hamcrest.Matcher)
 
 /**
- * Tests that the parcelable interface is implemented correctly.
+ * Test native libraries to see if they are crashing the application
  */
 @RunWith(AndroidJUnit4.class)
 @SmallTest
@@ -52,7 +54,7 @@ public class NativeComponentsTest {
     }
 
     @Test
-    public void checkGesture() {
+    public void testGesture() {
         try {
             UiObject moduleButton = device.findObject(new UiSelector().text("GESTURE"));
             moduleButton.click();
@@ -65,7 +67,7 @@ public class NativeComponentsTest {
     }
 
     @Test
-    public void checkGradient() {
+    public void testGradient() {
         try {
             UiObject moduleButton = device.findObject(new UiSelector().text("GRADIENT"));
             moduleButton.click();
@@ -78,20 +80,33 @@ public class NativeComponentsTest {
     }
 
     @Test
-    public void checkShare() {
+    public void testShare() {
         try {
-            UiObject moduleButton = device.findObject(new UiSelector().text("SHARE"));
-            moduleButton.click();
+            device.findObject(new UiSelector().text("SHARE")).click(); // Share button on home
 
-            UiObject backButton = device.findObject(new UiSelector().text("BACK"));
-            backButton.click();
+            // Test WhatsApp share
+            device.findObject(new UiSelector().text("SHARE")).click(); // Share button on module page
+            device.findObject(new UiSelector().text("WhatsApp")).click();
+            device.pressBack();
+
+            // Test Gmail share
+            device.findObject(new UiSelector().text("SHARE")).click(); // Share button on module page
+            device.findObject(new UiSelector().text("Gmail")).click();
+            device.pressDPadDown(); // Close the keyboard which open automatically on gmail share
+
+            // Not sure why need to press back twice but once wont go back
+            device.pressBack();
+            device.pressBack();
+
+            // Finally go back to the page
+            device.findObject(new UiSelector().text("BACK")).click();
         }catch(UiObjectNotFoundException e) {
             System.out.println(e);
         }
     }
 
     @Test
-    public void checkUdp() {
+    public void testUdp() {
         try {
             UiObject moduleButton = device.findObject(new UiSelector().text("UDP"));
             moduleButton.click();
@@ -104,7 +119,7 @@ public class NativeComponentsTest {
     }
 
     @Test
-    public void checkWebview() {
+    public void testWebview() {
         try {
             UiObject moduleButton = device.findObject(new UiSelector().text("WEBVIEW"));
             moduleButton.click();
