@@ -23,10 +23,13 @@ platform :android do
 
   desc "Build android release bundle"
   lane :build_release do
-    gradle(
-      task: 'bundle',
-      build_type: 'Release'
-    )
+    gradle(task: "clean assembleRelease")
+  end
+
+  desc "Build android release bundle and install it on connected device"
+  lane :build_release_install do
+    gradle(task: "clean assembleRelease")
+    sh("adb install -r ../app/build/outputs/apk/release/app-release.apk")
   end
 
   desc "Submit a new Beta Build to Crashlytics Beta"

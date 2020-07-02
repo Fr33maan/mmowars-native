@@ -10,6 +10,10 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+
+      <!-- Google's doc says it should be in your test app's manifest - but I only have the app to test manifest -->
+      <uses-library android:name="android.test.runner"/>
+
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

@@ -123,6 +123,11 @@ def enableHermes = project.ext.react.get("enableHermes", false);
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    useLibrary 'android.test.runner'
+    useLibrary 'android.test.base'
+    useLibrary 'android.test.mock'
+    testBuildType "debug"
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -134,6 +139,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     splits {
         abi {
@@ -163,6 +169,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            applicationIdSuffix ".debug"
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
@@ -214,6 +221,15 @@ dependencies {
     debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.flipper'
     }
+
+    // Check versions on maven -> https://maven.google.com/web/index.html
+
+    androidTestImplementation 'androidx.test:core:' + rootProject.coreVersion
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1' // up to date 07/2020
+    androidTestImplementation 'androidx.test:runner:' + rootProject.runnerVersion
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0' // up to date 07/2020
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0' // up to date 07/2020
+    androidTestImplementation 'com.google.truth:truth:' + rootProject.truthVersion
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
