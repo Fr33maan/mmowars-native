@@ -9,13 +9,17 @@ import androidx.test.core.app.ApplicationProvider;
 import androidx.test.uiautomator.*;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Color;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.hamcrest.MatcherAssert.assertThat;
+
 import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 // http://junit.sourceforge.net/javadoc/org/junit/Assert.html#assertThat(T,%20org.hamcrest.Matcher)
 
 /**
@@ -121,12 +125,35 @@ public class NativeComponentsTest {
     @Test
     public void testWebview() {
         try {
-            UiObject moduleButton = device.findObject(new UiSelector().text("WEBVIEW"));
-            moduleButton.click();
+            device.findObject(new UiSelector().text("WEBVIEW")).click();
 
-            UiObject backButton = device.findObject(new UiSelector().text("BACK"));
-            backButton.click();
-        }catch(UiObjectNotFoundException e) {
+            // Webview content should exists
+            UiObject gameTitle = device.findObject(new UiSelector().description("Container"));
+            assertThat(gameTitle, notNullValue());
+
+            // Wait for the game to fully load
+            // @TODO self host the game and make it fullscreen
+            Thread.sleep(8000);
+
+            // Take a screenshot and check the color inside the webview
+            // If its not that color it means the webview is unable to display the game
+            Bitmap bitmap = InstrumentationRegistry.getInstrumentation().getUiAutomation().takeScreenshot();
+
+            // @TODO once we changed the game for a faster loading version, change where we are looking
+            int pixel = bitmap.getPixel(50, 450);
+            int redValue = Color.red(pixel);
+            int blueValue = Color.blue(pixel);
+            int greenValue = Color.green(pixel);
+
+            // Check the actual color - blue background of pixi demo
+            // https://pixijs.io/examples/#/demos-basic/container.js
+            assertEquals(16, redValue);
+            assertEquals(153, greenValue);
+            assertEquals(187, blueValue);
+
+            // Go back to main screen
+            device.findObject(new UiSelector().text("BACK")).click();
+        }catch(UiObjectNotFoundException | InterruptedException e) {
             System.out.println(e);
         }
     }
