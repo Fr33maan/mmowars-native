@@ -31,7 +31,7 @@ function UdpClient({ setStateMessage, setErrorMessage, setResponsesCount, setUnm
 				sendMessage(socket, setResponsesCount)
 			})
 
-			socket.on('message', (msg) => {
+			socket.on('message', () => {
 				sendMessage(socket, setResponsesCount)
 			})
 

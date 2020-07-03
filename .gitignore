@@ -66,3 +66,4 @@ android/api-google-service-account.json
 android/app/google-services.json
 android/app/upload-key.keystore
 *.keystore
+android/app/src/debug/google-services.json
