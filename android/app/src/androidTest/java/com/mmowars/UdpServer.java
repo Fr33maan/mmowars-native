@@ -5,6 +5,8 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
+import static org.junit.Assert.assertNull;
+
 class UdpServer implements Runnable {
    public void run() {
       DatagramSocket socket;
@@ -23,7 +25,7 @@ class UdpServer implements Runnable {
          }
 
       } catch (IOException e) {
-         e.printStackTrace();
+         assertNull(e);
       }
 
 

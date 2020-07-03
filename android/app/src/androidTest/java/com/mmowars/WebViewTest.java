@@ -12,6 +12,7 @@ import androidx.test.uiautomator.UiSelector;
 
 import static org.hamcrest.core.IsNull.notNullValue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 
 public class WebViewTest {
@@ -45,8 +46,9 @@ public class WebViewTest {
 
             // Go back to main screen
             device.findObject(new UiSelector().text("BACK")).click();
+
         }catch(UiObjectNotFoundException | InterruptedException e) {
-            System.out.println(e);
+            assertNull(e);
         }
     }
 }

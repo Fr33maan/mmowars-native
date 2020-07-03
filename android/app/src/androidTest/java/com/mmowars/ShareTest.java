@@ -4,6 +4,8 @@ import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
 
+import static org.junit.Assert.assertNull;
+
 public class ShareTest {
     public void test(UiDevice device) {
         try {
@@ -25,8 +27,9 @@ public class ShareTest {
 
             // Finally go back to the page
             device.findObject(new UiSelector().text("BACK")).click();
+
         }catch(UiObjectNotFoundException e) {
-            System.out.println(e);
+            assertNull(e);
         }
     }
 }

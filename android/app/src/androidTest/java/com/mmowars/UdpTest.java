@@ -5,6 +5,7 @@ import androidx.test.uiautomator.UiObject;
 import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
 
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 public class UdpTest {
@@ -25,10 +26,10 @@ public class UdpTest {
 
             // Get the last incremented message from the View
             UiObject messagesCount = device.findObject(new UiSelector().description("responsesCount"));
-            boolean messagesSentGreaterThan1000 = Integer.parseInt(messagesCount.getText()) > 1500;
+            boolean messagesSentGreaterThan1500 = Integer.parseInt(messagesCount.getText()) > 1500;
 
             // We should have a huge amount of message and 0 messages lost
-            assertTrue(messagesSentGreaterThan1000);
+            assertTrue("Messages count is not over 1500 - messagesCount: "+ messagesCount, messagesSentGreaterThan1500);
 
             // Leave the testModule
             UiObject backButton = device.findObject(new UiSelector().text("BACK"));
@@ -38,7 +39,7 @@ public class UdpTest {
             threadGroup.interrupt();
 
         }catch(UiObjectNotFoundException | InterruptedException e) {
-            System.out.println(e);
+            assertNull(e);
         }
     }
 }

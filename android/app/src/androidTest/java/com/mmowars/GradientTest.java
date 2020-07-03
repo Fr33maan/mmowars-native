@@ -5,6 +5,8 @@ import androidx.test.uiautomator.UiObject;
 import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
 
+import static org.junit.Assert.assertNull;
+
 public class GradientTest {
     public void test(UiDevice device) {
         try {
@@ -14,7 +16,7 @@ public class GradientTest {
             UiObject backButton = device.findObject(new UiSelector().text("BACK"));
             backButton.click();
         }catch(UiObjectNotFoundException e) {
-            System.out.println(e);
+            assertNull(e);
         }
     }
 }
