@@ -126,7 +126,9 @@ android {
     useLibrary 'android.test.runner'
     useLibrary 'android.test.base'
     useLibrary 'android.test.mock'
-    testBuildType "debug"
+
+    // When changing this setting, it's necessary to change the package in the NativeComponentsTest.java file
+    testBuildType "release"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

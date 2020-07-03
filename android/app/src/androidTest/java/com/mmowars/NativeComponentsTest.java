@@ -27,7 +27,7 @@ public class NativeComponentsTest {
 
     private UiDevice device;
     private static final int LAUNCH_TIMEOUT = 5000;
-    private static final String PACKAGE_NAME = "com.mmowars.debug";
+    private static final String PACKAGE_NAME = "com.mmowars";
 
     @Before
     public void setUp() {
@@ -63,6 +63,7 @@ public class NativeComponentsTest {
         new GradientTest().test(device);
     }
 
+    // @TODO must find a way to pre install configured apps on simulators
     @Test
     public void testShare() {
         new ShareTest().test(device);
