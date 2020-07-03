@@ -26,7 +26,7 @@ public class WebViewTest {
 
             // Wait for the game to fully load
             // @TODO self host the game and make it fullscreen
-            Thread.sleep(8000);
+            Thread.sleep(15000);
 
             // Take a screenshot and check the color inside the webview
             // If its not that color it means the webview is unable to display the game
