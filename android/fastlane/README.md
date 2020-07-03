@@ -21,6 +21,16 @@ or alternatively using `brew cask install fastlane`
 fastlane android test
 ```
 Runs all the tests
+### android build_release
+```
+fastlane android build_release
+```
+Build android release bundle
+### android build_release_install
+```
+fastlane android build_release_install
+```
+Build android release bundle and install it on connected device
 ### android beta
 ```
 fastlane android beta
