@@ -13,6 +13,7 @@
     "@react-native-firebase/app": "^7.3.1",
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "react-native-gesture-handler": "^1.6.1",
     "react-native-share": "^3.6.0",
     "react-native-udp": "^3.1.0",
     "react-native-webview": "^10.3.2"
