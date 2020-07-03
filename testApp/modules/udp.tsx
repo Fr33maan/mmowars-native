@@ -1,64 +1,108 @@
 import React, { useEffect, useState } from 'react'
-import { Text, Button } from 'react-native'
-var dgram = require('react-native-udp')
+import { Text, Button, View } from 'react-native'
+import udp from 'react-native-udp'
 
 const ids = {
 	lastId: 0,
 }
 
-function getNextId(): { int: number; bytes: number[] } {
-	if (ids.lastId === 65535) {
-		ids.lastId = 0
-	} else {
-		ids.lastId++
+function sendMessage(socket, setResponsesCount) {
+	const currentId = ids.lastId++
+	if (currentId % 200 === 0) {
+		// Limit number of UI updates to not interfere with throughput
+		setResponsesCount(currentId)
 	}
 
-	return {
-		int: ids.lastId,
-		bytes: [(ids.lastId & 0x0000ff00) >> 8, ids.lastId & 0x000000ff],
-	}
+	// Send messages of 1000 bytes to simulate MTU
+	socket.send(new Uint8Array(1000), 0, 1000, 4444, '127.0.0.1', function (err) {
+		if (err) throw err
+	})
 }
 
-function sendMessage(socket, setResponsesCount) {
-	const { int, bytes } = getNextId()
-	if (int % 200 === 0) {
-		setResponsesCount(int)
-	}
+function UdpClient({ setStateMessage, setErrorMessage, setResponsesCount, setUnmount }) {
+	useEffect(() => {
+		try {
+			const socket = udp.createSocket('udp4')
+			socket.bind((Math.random() * 60536) | (0 + 5000)) // 60536-65536
+			setStateMessage('binding')
 
-	const buffer = new Uint8Array(1000)
-	buffer[0] = bytes[0]
-	buffer[1] = bytes[1]
+			socket.once('listening', () => {
+				setStateMessage('bound')
+				sendMessage(socket, setResponsesCount)
+			})
 
-	socket.send(buffer, 0, 1000, 4444, '127.0.0.1', function (err) {
-		if (err) throw err
-		// console.log('message was sent ' + int)
-	})
+			socket.on('message', (msg) => {
+				sendMessage(socket, setResponsesCount)
+			})
+
+			socket.on('error', (e) => {
+				console.log('error')
+				if (typeof e === 'string') {
+					setErrorMessage(e)
+				} else {
+					setErrorMessage(e.message)
+				}
+
+				// If error, we unmount and remount
+				setUnmount()
+			})
+
+			return () => {
+				console.log('close')
+				socket.close()
+			}
+		} catch (e) {
+			console.log('catch')
+			if (typeof e === 'string') {
+				setErrorMessage(e)
+			} else {
+				setErrorMessage(e.message)
+			}
+			setUnmount()
+		}
+	}, [])
+
+	return <></>
 }
 
 export function Udp({ back }) {
 	const [responsesCount, setResponsesCount] = useState(0)
+	const [errorMessage, setErrorMessage] = useState(null)
+	const [stateMessage, setStateMessage] = useState(null)
+	const [mounted, setMounted] = useState(true)
 
-	useEffect(() => {
-		const socket = dgram.createSocket('udp4')
-		socket.bind(4445)
+	// This is to prevent the issue mentioned here
+	// https://github.com/tradle/react-native-udp/issues/118
+	function setUnmount() {
+		setTimeout(() => {
+			setMounted(false)
+			setErrorMessage(null)
+			setStateMessage('remounting')
 
-		socket.once('listening', () => {
-			sendMessage(socket, setResponsesCount)
-		})
-
-		socket.on('message', (msg) => {
-			// console.log('message was received ' + (msg[0] * 256 + msg[1]))
-			sendMessage(socket, setResponsesCount)
-		})
-	}, [])
+			setTimeout(() => {
+				setMounted(true)
+			}, 10)
+		}, 10)
+	}
 
 	return (
-		<>
+		<View style={{ height: '100%', width: '100%' }}>
 			<Text>Udp</Text>
+			<Text>State: {stateMessage}</Text>
+			<Text>{errorMessage}</Text>
 			<Text accessibilityLabel="responsesCount">{responsesCount}</Text>
+			{mounted && (
+				<UdpClient
+					setResponsesCount={setResponsesCount}
+					setErrorMessage={setErrorMessage}
+					setStateMessage={setStateMessage}
+					setUnmount={setUnmount}
+				/>
+			)}
+
 			<Button title="BACK" onPress={back}>
 				<Text>BACK</Text>
 			</Button>
-		</>
+		</View>
 	)
 }
