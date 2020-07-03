@@ -63,7 +63,6 @@ public class NativeComponentsTest {
         new GradientTest().test(device);
     }
 
-    // @TODO must find a way to pre install configured apps on simulators
     @Test
     public void testShare() {
         new ShareTest().test(device);
