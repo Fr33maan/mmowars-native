@@ -4,10 +4,14 @@
 
 import {
   AppRegistry
-} from 'react-native';
-import App from './testApp';
+} from 'react-native'
+import DeviceInfo from 'react-native-device-info'
+import TestApp from './App/testApp'
+import ProdApp from './App/prodApp'
 import {
   name as appName
-} from './app.json';
+} from './app.json'
 
-AppRegistry.registerComponent(appName, () => App);
+const App = DeviceInfo.getBundleId().match('nativetesting') ? TestApp : ProdApp
+
+AppRegistry.registerComponent(appName, () => App)

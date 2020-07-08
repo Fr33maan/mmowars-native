@@ -27,7 +27,7 @@ public class NativeComponentsTest {
 
     private UiDevice device;
     private static final int LAUNCH_TIMEOUT = 5000;
-    private static final String PACKAGE_NAME = "com.mmowars";
+    private static final String PACKAGE_NAME = "com.mmowars.nativetesting";
 
     @Before
     public void setUp() {

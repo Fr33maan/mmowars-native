@@ -21,6 +21,11 @@ or alternatively using `brew cask install fastlane`
 fastlane android test
 ```
 Runs all the tests
+### android build_nativetesting
+```
+fastlane android build_nativetesting
+```
+Build for nativeTesting
 ### android build_release
 ```
 fastlane android build_release

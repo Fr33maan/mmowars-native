@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "install:nativetesting": "adb install -r android/app/build/outputs/apk/nativetesting/app-nativetesting.apk",
+    "install:release": "adb install -r android/app/build/outputs/apk/release/app-release.apk",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -15,6 +17,7 @@
     "rambda": "^5.9.0",
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "react-native-device-info": "^5.6.1",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-localize": "^1.4.0",

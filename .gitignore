@@ -66,4 +66,7 @@ android/api-google-service-account.json
 android/app/google-services.json
 android/app/upload-key.keystore
 *.keystore
+
+# Specific google-services.json files
 android/app/src/debug/google-services.json
+android/app/src/nativetesting/google-services.json

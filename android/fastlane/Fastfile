@@ -21,6 +21,11 @@ platform :android do
     gradle(task: "test")
   end
 
+  desc "Build for nativeTesting"
+  lane :build_nativetesting do
+    gradle(task: "clean assembleNativetesting")
+  end
+
   desc "Build android release bundle"
   lane :build_release do
     gradle(task: "clean assembleRelease")
