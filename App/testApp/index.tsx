@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { SafeAreaView, Text, StatusBar, Button } from 'react-native'
 import * as modules from './modules'
 
-function App(): React.ReactElement {
+export function App(): React.ReactElement {
 	const [moduleName, setModule] = useState(null)
 	const Module = modules[moduleName]
 	return (
@@ -11,7 +11,12 @@ function App(): React.ReactElement {
 			<SafeAreaView>
 				{(moduleName && <Module back={() => setModule(null)} />) || (
 					<>
-						<Button title="Gesture" onPress={() => setModule('Gesture')} testID={'Gesture'} accessibilityLabel={'Gesture'}>
+						<Button
+							title="Gesture"
+							onPress={() => setModule('Gesture')}
+							testID={'Gesture'}
+							accessibilityLabel={'Gesture'}
+						>
 							<Text>Gesture</Text>
 						</Button>
 						<Button title="Gradient" onPress={() => setModule('Gradient')}>
@@ -32,5 +37,3 @@ function App(): React.ReactElement {
 		</>
 	)
 }
-
-export default App

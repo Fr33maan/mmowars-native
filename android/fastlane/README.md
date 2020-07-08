@@ -16,11 +16,6 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## Android
-### android test
-```
-fastlane android test
-```
-Runs all the tests
 ### android build_nativetesting
 ```
 fastlane android build_nativetesting
@@ -36,11 +31,6 @@ Build android release bundle
 fastlane android build_release_install
 ```
 Build android release bundle and install it on connected device
-### android beta
-```
-fastlane android beta
-```
-Submit a new Beta Build to Crashlytics Beta
 ### android deploy
 ```
 fastlane android deploy

@@ -6,9 +6,6 @@
   },
   "editor.formatOnPaste": false,
   "editor.tabSize": 2,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
   "eslint.alwaysShowStatus": true,
   "eslint.format.enable": true,
   "eslint.run": "onType",

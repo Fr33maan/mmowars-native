@@ -1,7 +1,7 @@
 import React from 'react'
 import { SafeAreaView, Text, StatusBar } from 'react-native'
 
-function App(): React.ReactElement {
+export function App(): React.ReactElement {
 	return (
 		<>
 			<StatusBar barStyle="dark-content" />
@@ -11,5 +11,3 @@ function App(): React.ReactElement {
 		</>
 	)
 }
-
-export default App
