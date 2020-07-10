@@ -16,6 +16,9 @@ jobs:
         with:
           node-version: '12'
 
+      - name: Install AppCenter CLI
+        run: 'npm i -g appcenter-cli'
+
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.6'
