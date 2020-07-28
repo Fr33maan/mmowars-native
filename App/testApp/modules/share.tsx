@@ -3,7 +3,7 @@ import { Text, Button } from 'react-native'
 import RNShare from 'react-native-share'
 
 function share() {
-	RNShare.open({})
+	RNShare.open({ message: 'a message to share' })
 		.then((res) => {
 			console.log(res)
 		})
