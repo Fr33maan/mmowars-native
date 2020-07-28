@@ -19,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* mmowarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mmowarsTests.m */; };
 		3DC3BB77F82240DEC95F1950 /* libPods-mmowars-mmowarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D87F5A769C42E68721D61A /* libPods-mmowars-mmowarsTests.a */; };
 		46BDFE2F015EADAD222C7562 /* libPods-mmowars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9C402DEBCFA2E9BBDF65CA /* libPods-mmowars.a */; };
+		7F62EBCC24D06478007213C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F62EBCB24D06478007213C0 /* GoogleService-Info.plist */; };
 		C18642229783A28E1AA4EC38 /* libPods-mmowars-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1C67E06CE08C1265F46727 /* libPods-mmowars-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		2D02E4901E0B4A5D006451C7 /* mmowars-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mmowars-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B7BB8761F8F27206C45ACF0 /* Pods-mmowars-mmowarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-mmowarsTests.release.xcconfig"; path = "Target Support Files/Pods-mmowars-mmowarsTests/Pods-mmowars-mmowarsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A73CAAB0CE045DB050BB15F /* Pods-mmowars-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-mmowars-tvOSTests/Pods-mmowars-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F62EBCB24D06478007213C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8444FB0D87BC973A253A0C0B /* Pods-mmowars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars.release.xcconfig"; path = "Target Support Files/Pods-mmowars/Pods-mmowars.release.xcconfig"; sourceTree = "<group>"; };
 		89D87F5A769C42E68721D61A /* libPods-mmowars-mmowarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars-mmowarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9C402DEBCFA2E9BBDF65CA /* libPods-mmowars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +163,6 @@
 				7A73CAAB0CE045DB050BB15F /* Pods-mmowars-tvOSTests.debug.xcconfig */,
 				F2133A77542AD19855D14314 /* Pods-mmowars-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				7F62EBCB24D06478007213C0 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* mmowars */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* mmowarsTests */,
@@ -341,6 +343,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				7F62EBCC24D06478007213C0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
