@@ -16,7 +16,7 @@
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
   if (test(view)) {
-    return YES;
+    return NO;
   }
   for (UIView *subview in [view subviews]) {
     if ([self findSubviewInView:subview matching:test]) {
