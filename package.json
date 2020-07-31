@@ -6,6 +6,7 @@
 		"android": "react-native run-android",
 		"install:nativetesting": "adb install -r android/app/build/outputs/apk/nativetesting/app-nativetesting.apk",
 		"install:release": "adb install -r android/app/build/outputs/apk/release/app-release.apk",
+		"apk:laptopdownload": "scp fr33maan@192.168.1.45:/home/fr33maan/dev/mmowars/android/app/build/outputs/bundle/release/app-release.aab .",
 		"ios": "react-native run-ios",
 		"start": "react-native start",
 		"test": "jest",
@@ -44,6 +45,9 @@
 		"typescript": "^3.9.5"
 	},
 	"jest": {
-		"preset": "react-native"
+		"preset": "react-native",
+		"watchPathIgnorePatterns": [
+			"/App/"
+		]
 	}
 }

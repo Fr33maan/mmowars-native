@@ -3,7 +3,7 @@ name: Test and build Android App
 on:
   push:
     branches:
-      - develop
+      - feat/fetch-ui
 
 jobs:
   release-android:
@@ -16,8 +16,20 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Install AppCenter CLI
-        run: 'npm i -g appcenter-cli'
+      - name: Install AppCenter CLI and Jest
+        run: 'npm i -g appcenter-cli jest'
+
+      - name: Install packages
+        run: yarn install
+
+      - name: Run tests for js
+        run: 'jest'
+
+      - name: Install shunit
+        run: 'sudo apt install shunit2'
+
+      - name: Run tests for bash scripts
+        run: 'cd .github/scripts/tests && bash runTests.sh'
 
       - uses: actions/setup-ruby@v1
         with:
@@ -26,8 +38,47 @@ jobs:
       - name: Install Fastlane & screengrab
         run: cd android && gem install bundler && bundle install
 
-      - name: Install packages
-        run: yarn install
+      - name: Remove base prodApp
+        run: 'rm -rf App/prodApp'
+        shell: bash
+
+      - uses: actions/checkout@v2
+        with:
+          repository: '${{ secrets.PRIVATE_REPO }}'
+          ref: 'develop'
+          token: '${{ secrets.PAT_PRIVATE_GITHUB_REPO }}'
+          path: 'App/ui'
+          fetch-depth: '0'
+
+      - name: Check that last tag is correctly formated
+        run: 'cd App/ui && [[ $(bash ../../.github/scripts/isValidTag.sh $(git describe --tags)) = false ]] && exit 99 || echo "version format is valid"'
+        shell: bash
+
+      - name: Check that last tag is an increment of preLastTag
+        run: 'cd App/ui && [[ $(bash ../../.github/scripts/tagIsIncremented.sh $(git tag --sort=committerdate)) = false ]] && exit 99 || echo "Version has been incremented"'
+        shell: bash
+
+      - name: Check that if isMajor, tag is rel/x.x.x and not patch - Major can only be rel
+        run: 'cd App/ui && ([[ $(bash ../../.github/scripts/isMajorRelease.sh $(git tag --sort=committerdate)) = true ]] && [[ $(bash ../../.github/scripts/isRelease.sh $(git describe --tags)) = false ]]) && exit 99 || echo "is not major OR is major and is release"'
+        shell: bash
+
+      - name: Update versionCode
+        run: 'sed -i "s/versionCode 1/versionCode $(cd App/ui && echo $(bash ../../.github/scripts/getVersionCode.sh $(git tag --sort=committerdate)))/" android/app/build.gradle'
+        shell: bash
+
+      - name: Update versionName
+        run: 'sed -i "s/semVerName/$(echo $(cd App/ui && git describe --tags | awk -F''/'' ''{ print $2 }''))/" android/app/build.gradle'
+        shell: bash
+
+      - name: Set CodePush Production Deployment key in strings.xml
+        run: 'sed -i "s/cpDeployKey/$CODEPUSH_ANDROID_DEPLOYMENT_KEY/" android/app/src/main/res/values/strings.xml'
+        shell: bash
+        env:
+          CODEPUSH_ANDROID_DEPLOYMENT_KEY: ${{ secrets.CODEPUSH_ANDROID_DEPLOYMENT_KEY }}
+
+      - name: Move ui source to prodApp directory once version tests pass
+        run: 'mv App/ui/src App/prodApp'
+        shell: bash
 
       - name: Create google-service file (Firebase)
         run: 'echo "$GOOGLE_SERVICES_JSON" > android/app/google-services.json'
@@ -53,5 +104,46 @@ jobs:
         env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
 
-      - name: Build app with fastlane and sign it
-        run: cd android && fastlane android build_release
+      - name: Create json version file
+        run: "node .github/scripts/createJsonVersionFile.js $(echo $(cd App/ui && git describe --tags) | awk -F'/' '{ print $2 }')"
+        shell: bash
+        env:
+          VERSION_FILE_JWT_PKEY: ${{ secrets.VERSION_FILE_JWT_PKEY }}
+
+      - name: Replace babel config
+        run: 'rm babel.config.js && mv App/ui/native/babel.config.js .'
+
+      - name: Set env variable isMajorRelease
+        run: 'echo "::set-env name=isMajorRelease::$(cd App/ui && echo $(bash ../../.github/scripts/isMajorRelease.sh $(git tag --sort=committerdate)))"'
+
+      - name: Set env variable isRelease
+        run: 'echo "::set-env name=isRelease::$(cd App/ui && echo $(bash ../../.github/scripts/isRelease.sh $(git describe --tags)))"'
+
+      - name: Bundle app with fastlane if release
+        if: ${{ env.isRelease == 'true' }}
+        run: 'cd android && fastlane android build_release'
+
+      - name: Build and upload CodePush bundle if NOT majorRelease
+        if: ${{ env.isMajorRelease == 'false' }}
+        run: 'appcenter codepush release-react --app $CODEPUSH_ANDROID_APP_NAME --sourcemap-output ./sourcemaps/bundle.js.map --token $CODEPUSH_API_TOKEN'
+        shell: bash
+        env:
+          CODEPUSH_ANDROID_APP_NAME: ${{ secrets.CODEPUSH_ANDROID_APP_NAME }}
+          CODEPUSH_API_TOKEN: ${{ secrets.CODEPUSH_API_TOKEN }}
+
+      - name: Set sourcemap local file as android bundle if isRelease
+        if: ${{ env.isRelease == 'true' }}
+        run: 'echo "::set-env name=sourcemapLocalFile::./android/app/build/generated/sourcemaps/react/release/index.android.bundle.map"'
+
+      - name: Set sourcemap local file as codepush bundle if NOT isRelease
+        if: ${{ env.isRelease == 'false' }}
+        run: 'echo "::set-env name=sourcemapLocalFile::./sourcemaps/bundle.js.map"'
+
+      - name: Upload sourcemap to AWS S3
+        run: "bash .github/scripts/upload-sourcemap.sh ${{ env.sourcemapLocalFile }} $(echo $(cd App/ui && git describe --tags) | awk -F'/' '{ print $2 }')"
+        shell: bash
+        env:
+          AWS_CLI_ACCESS_KEY_ID: ${{ secrets.AWS_CLI_ACCESS_KEY_ID }}
+          AWS_CLI_ACCESS_KEY_SECRET: ${{ secrets.AWS_CLI_ACCESS_KEY_SECRET }}
+          AWS_SOURCEMAP_BUCKET_NAME: ${{ secrets.AWS_SOURCEMAP_BUCKET_NAME }}
+          AWS_SOURCEMAP_REGION: ${{ secrets.AWS_SOURCEMAP_REGION }}

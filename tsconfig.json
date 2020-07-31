@@ -17,7 +17,7 @@
       "esnext",
       "dom"
     ],
-    "baseUrl": "./projects",
+    "baseUrl": "./App/prodApp",
     "paths": {}
   }
 }
