@@ -23,18 +23,28 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Testing"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
                BuildableName = "mmowarsTests.xctest"
                BlueprintName = "mmowarsTests"
+               ReferencedContainer = "container:mmowars.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7F5ACE6C24D42D720089DC58"
+               BuildableName = "mmowarsUITests.xctest"
+               BlueprintName = "mmowarsUITests"
                ReferencedContainer = "container:mmowars.xcodeproj">
             </BuildableReference>
          </TestableReference>
