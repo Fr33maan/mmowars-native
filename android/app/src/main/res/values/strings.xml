@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MMO Wars</string>
+    <string name="app_name">mmowars</string>
     <string moduleConfig="true" name="CodePushDeploymentKey">cpDeployKey</string>
 </resources>
