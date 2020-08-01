@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* mmowarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mmowarsTests.m */; };
+		00E356F31AD99517003FC87E /* ReactNativeRealStarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeRealStarterTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		201F60B90E89B09D7A81F38A /* libPods-mmowars-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F6255489C67F49C7354B19 /* libPods-mmowars-tvOSTests.a */; };
+		201F60B90E89B09D7A81F38A /* libPods-ReactNativeRealStarter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F6255489C67F49C7354B19 /* libPods-ReactNativeRealStarter-tvOSTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* mmowarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mmowarsTests.m */; };
-		3DC3BB77F82240DEC95F1950 /* libPods-mmowars-mmowarsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D87F5A769C42E68721D61A /* libPods-mmowars-mmowarsTests.a */; };
-		46BDFE2F015EADAD222C7562 /* libPods-mmowars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9C402DEBCFA2E9BBDF65CA /* libPods-mmowars.a */; };
-		7F5ACE7024D42D720089DC58 /* mmowarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5ACE6F24D42D720089DC58 /* mmowarsUITests.swift */; };
+		2DCD954D1E0B4F2C00145EB5 /* ReactNativeRealStarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeRealStarterTests.m */; };
+		3DC3BB77F82240DEC95F1950 /* libPods-ReactNativeRealStarter-ReactNativeRealStarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D87F5A769C42E68721D61A /* libPods-ReactNativeRealStarter-ReactNativeRealStarterTests.a */; };
+		46BDFE2F015EADAD222C7562 /* libPods-ReactNativeRealStarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9C402DEBCFA2E9BBDF65CA /* libPods-ReactNativeRealStarter.a */; };
+		7F5ACE7024D42D720089DC58 /* ReactNativeRealStarterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5ACE6F24D42D720089DC58 /* ReactNativeRealStarterUITests.swift */; };
 		7F62EBCC24D06478007213C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F62EBCB24D06478007213C0 /* GoogleService-Info.plist */; };
-		C18642229783A28E1AA4EC38 /* libPods-mmowars-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1C67E06CE08C1265F46727 /* libPods-mmowars-tvOS.a */; };
+		C18642229783A28E1AA4EC38 /* libPods-ReactNativeRealStarter-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1C67E06CE08C1265F46727 /* libPods-ReactNativeRealStarter-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,60 +30,60 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = mmowars;
+			remoteInfo = ReactNativeRealStarter;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "mmowars-tvOS";
+			remoteInfo = "ReactNativeRealStarter-tvOS";
 		};
 		7F5ACE7224D42D720089DC58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = mmowars;
+			remoteInfo = ReactNativeRealStarter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* mmowarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mmowarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ReactNativeRealStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeRealStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* mmowarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmowarsTests.m; sourceTree = "<group>"; };
-		081AAF4D42B789031CC9600B /* Pods-mmowars-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-mmowars-tvOS/Pods-mmowars-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* mmowars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmowars.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mmowars/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = mmowars/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* ReactNativeRealStarterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeRealStarterTests.m; sourceTree = "<group>"; };
+		081AAF4D42B789031CC9600B /* Pods-ReactNativeRealStarter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-tvOS/Pods-ReactNativeRealStarter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ReactNativeRealStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeRealStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeRealStarter/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativeRealStarter/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mmowars/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mmowars/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mmowars/main.m; sourceTree = "<group>"; };
-		271D3F81CB64F9548FBC465C /* Pods-mmowars-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-tvOS.release.xcconfig"; path = "Target Support Files/Pods-mmowars-tvOS/Pods-mmowars-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		277D46EAF0A2ADC52C769074 /* Pods-mmowars-mmowarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-mmowarsTests.debug.xcconfig"; path = "Target Support Files/Pods-mmowars-mmowarsTests/Pods-mmowars-mmowarsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* mmowars-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mmowars-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* mmowars-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mmowars-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AABFD3251F04ED220551BB9 /* Pods-mmowars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars.debug.xcconfig"; path = "Target Support Files/Pods-mmowars/Pods-mmowars.debug.xcconfig"; sourceTree = "<group>"; };
-		6B7BB8761F8F27206C45ACF0 /* Pods-mmowars-mmowarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-mmowarsTests.release.xcconfig"; path = "Target Support Files/Pods-mmowars-mmowarsTests/Pods-mmowars-mmowarsTests.release.xcconfig"; sourceTree = "<group>"; };
-		7A73CAAB0CE045DB050BB15F /* Pods-mmowars-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-mmowars-tvOSTests/Pods-mmowars-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7AA7BB14C70CCFF9631B882E /* Pods-mmowars.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars.testing.xcconfig"; path = "Target Support Files/Pods-mmowars/Pods-mmowars.testing.xcconfig"; sourceTree = "<group>"; };
-		7F5ACE6D24D42D720089DC58 /* mmowarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mmowarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F5ACE6F24D42D720089DC58 /* mmowarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mmowarsUITests.swift; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeRealStarter/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeRealStarter/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeRealStarter/main.m; sourceTree = "<group>"; };
+		271D3F81CB64F9548FBC465C /* Pods-ReactNativeRealStarter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-tvOS/Pods-ReactNativeRealStarter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		277D46EAF0A2ADC52C769074 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-ReactNativeRealStarterTests/Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativeRealStarter-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* ReactNativeRealStarter-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactNativeRealStarter-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AABFD3251F04ED220551BB9 /* Pods-ReactNativeRealStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter/Pods-ReactNativeRealStarter.debug.xcconfig"; sourceTree = "<group>"; };
+		6B7BB8761F8F27206C45ACF0 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-ReactNativeRealStarterTests/Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A73CAAB0CE045DB050BB15F /* Pods-ReactNativeRealStarter-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-tvOSTests/Pods-ReactNativeRealStarter-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AA7BB14C70CCFF9631B882E /* Pods-ReactNativeRealStarter.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter.testing.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter/Pods-ReactNativeRealStarter.testing.xcconfig"; sourceTree = "<group>"; };
+		7F5ACE6D24D42D720089DC58 /* ReactNativeRealStarterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeRealStarterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5ACE6F24D42D720089DC58 /* ReactNativeRealStarterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativeRealStarterUITests.swift; sourceTree = "<group>"; };
 		7F5ACE7124D42D720089DC58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F62EBCB24D06478007213C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8235AE0004D3F0ADAA863BB7 /* Pods-mmowars-mmowarsTests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-mmowarsTests.testing.xcconfig"; path = "Target Support Files/Pods-mmowars-mmowarsTests/Pods-mmowars-mmowarsTests.testing.xcconfig"; sourceTree = "<group>"; };
-		883D4E5F08B8C96941CCD753 /* Pods-mmowars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars.release.xcconfig"; path = "Target Support Files/Pods-mmowars/Pods-mmowars.release.xcconfig"; sourceTree = "<group>"; };
-		89D87F5A769C42E68721D61A /* libPods-mmowars-mmowarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars-mmowarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC9C402DEBCFA2E9BBDF65CA /* libPods-mmowars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2F6255489C67F49C7354B19 /* libPods-mmowars-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCB500B1E7149E090C7C6326 /* Pods-mmowars-tvOS.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-tvOS.testing.xcconfig"; path = "Target Support Files/Pods-mmowars-tvOS/Pods-mmowars-tvOS.testing.xcconfig"; sourceTree = "<group>"; };
-		ED1C67E06CE08C1265F46727 /* libPods-mmowars-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8235AE0004D3F0ADAA863BB7 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.testing.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-ReactNativeRealStarterTests/Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.testing.xcconfig"; sourceTree = "<group>"; };
+		883D4E5F08B8C96941CCD753 /* Pods-ReactNativeRealStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter/Pods-ReactNativeRealStarter.release.xcconfig"; sourceTree = "<group>"; };
+		89D87F5A769C42E68721D61A /* libPods-ReactNativeRealStarter-ReactNativeRealStarterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeRealStarter-ReactNativeRealStarterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9C402DEBCFA2E9BBDF65CA /* libPods-ReactNativeRealStarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeRealStarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F6255489C67F49C7354B19 /* libPods-ReactNativeRealStarter-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeRealStarter-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB500B1E7149E090C7C6326 /* Pods-ReactNativeRealStarter-tvOS.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-tvOS.testing.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-tvOS/Pods-ReactNativeRealStarter-tvOS.testing.xcconfig"; sourceTree = "<group>"; };
+		ED1C67E06CE08C1265F46727 /* libPods-ReactNativeRealStarter-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeRealStarter-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F2133A77542AD19855D14314 /* Pods-mmowars-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-mmowars-tvOSTests/Pods-mmowars-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		F8260F9BCA9644B3400DD717 /* Pods-mmowars-tvOSTests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-tvOSTests.testing.xcconfig"; path = "Target Support Files/Pods-mmowars-tvOSTests/Pods-mmowars-tvOSTests.testing.xcconfig"; sourceTree = "<group>"; };
+		F2133A77542AD19855D14314 /* Pods-ReactNativeRealStarter-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-tvOSTests/Pods-ReactNativeRealStarter-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8260F9BCA9644B3400DD717 /* Pods-ReactNativeRealStarter-tvOSTests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeRealStarter-tvOSTests.testing.xcconfig"; path = "Target Support Files/Pods-ReactNativeRealStarter-tvOSTests/Pods-ReactNativeRealStarter-tvOSTests.testing.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC3BB77F82240DEC95F1950 /* libPods-mmowars-mmowarsTests.a in Frameworks */,
+				3DC3BB77F82240DEC95F1950 /* libPods-ReactNativeRealStarter-ReactNativeRealStarterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46BDFE2F015EADAD222C7562 /* libPods-mmowars.a in Frameworks */,
+				46BDFE2F015EADAD222C7562 /* libPods-ReactNativeRealStarter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C18642229783A28E1AA4EC38 /* libPods-mmowars-tvOS.a in Frameworks */,
+				C18642229783A28E1AA4EC38 /* libPods-ReactNativeRealStarter-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201F60B90E89B09D7A81F38A /* libPods-mmowars-tvOSTests.a in Frameworks */,
+				201F60B90E89B09D7A81F38A /* libPods-ReactNativeRealStarter-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,13 +129,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* mmowarsTests */ = {
+		00E356EF1AD99517003FC87E /* ReactNativeRealStarterTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* mmowarsTests.m */,
+				00E356F21AD99517003FC87E /* ReactNativeRealStarterTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = mmowarsTests;
+			path = ReactNativeRealStarterTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -146,7 +146,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* mmowars */ = {
+		13B07FAE1A68108700A75B9A /* ReactNativeRealStarter */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -157,7 +157,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = mmowars;
+			name = ReactNativeRealStarter;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -165,10 +165,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				AC9C402DEBCFA2E9BBDF65CA /* libPods-mmowars.a */,
-				89D87F5A769C42E68721D61A /* libPods-mmowars-mmowarsTests.a */,
-				ED1C67E06CE08C1265F46727 /* libPods-mmowars-tvOS.a */,
-				B2F6255489C67F49C7354B19 /* libPods-mmowars-tvOSTests.a */,
+				AC9C402DEBCFA2E9BBDF65CA /* libPods-ReactNativeRealStarter.a */,
+				89D87F5A769C42E68721D61A /* libPods-ReactNativeRealStarter-ReactNativeRealStarterTests.a */,
+				ED1C67E06CE08C1265F46727 /* libPods-ReactNativeRealStarter-tvOS.a */,
+				B2F6255489C67F49C7354B19 /* libPods-ReactNativeRealStarter-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,29 +176,29 @@
 		77B240A02CD3319754067206 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				277D46EAF0A2ADC52C769074 /* Pods-mmowars-mmowarsTests.debug.xcconfig */,
-				6B7BB8761F8F27206C45ACF0 /* Pods-mmowars-mmowarsTests.release.xcconfig */,
-				081AAF4D42B789031CC9600B /* Pods-mmowars-tvOS.debug.xcconfig */,
-				271D3F81CB64F9548FBC465C /* Pods-mmowars-tvOS.release.xcconfig */,
-				7A73CAAB0CE045DB050BB15F /* Pods-mmowars-tvOSTests.debug.xcconfig */,
-				F2133A77542AD19855D14314 /* Pods-mmowars-tvOSTests.release.xcconfig */,
-				6AABFD3251F04ED220551BB9 /* Pods-mmowars.debug.xcconfig */,
-				883D4E5F08B8C96941CCD753 /* Pods-mmowars.release.xcconfig */,
-				7AA7BB14C70CCFF9631B882E /* Pods-mmowars.testing.xcconfig */,
-				8235AE0004D3F0ADAA863BB7 /* Pods-mmowars-mmowarsTests.testing.xcconfig */,
-				CCB500B1E7149E090C7C6326 /* Pods-mmowars-tvOS.testing.xcconfig */,
-				F8260F9BCA9644B3400DD717 /* Pods-mmowars-tvOSTests.testing.xcconfig */,
+				277D46EAF0A2ADC52C769074 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.debug.xcconfig */,
+				6B7BB8761F8F27206C45ACF0 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.release.xcconfig */,
+				081AAF4D42B789031CC9600B /* Pods-ReactNativeRealStarter-tvOS.debug.xcconfig */,
+				271D3F81CB64F9548FBC465C /* Pods-ReactNativeRealStarter-tvOS.release.xcconfig */,
+				7A73CAAB0CE045DB050BB15F /* Pods-ReactNativeRealStarter-tvOSTests.debug.xcconfig */,
+				F2133A77542AD19855D14314 /* Pods-ReactNativeRealStarter-tvOSTests.release.xcconfig */,
+				6AABFD3251F04ED220551BB9 /* Pods-ReactNativeRealStarter.debug.xcconfig */,
+				883D4E5F08B8C96941CCD753 /* Pods-ReactNativeRealStarter.release.xcconfig */,
+				7AA7BB14C70CCFF9631B882E /* Pods-ReactNativeRealStarter.testing.xcconfig */,
+				8235AE0004D3F0ADAA863BB7 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.testing.xcconfig */,
+				CCB500B1E7149E090C7C6326 /* Pods-ReactNativeRealStarter-tvOS.testing.xcconfig */,
+				F8260F9BCA9644B3400DD717 /* Pods-ReactNativeRealStarter-tvOSTests.testing.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7F5ACE6E24D42D720089DC58 /* mmowarsUITests */ = {
+		7F5ACE6E24D42D720089DC58 /* ReactNativeRealStarterUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7F5ACE6F24D42D720089DC58 /* mmowarsUITests.swift */,
+				7F5ACE6F24D42D720089DC58 /* ReactNativeRealStarterUITests.swift */,
 				7F5ACE7124D42D720089DC58 /* Info.plist */,
 			);
-			path = mmowarsUITests;
+			path = ReactNativeRealStarterUITests;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -212,10 +212,10 @@
 			isa = PBXGroup;
 			children = (
 				7F62EBCB24D06478007213C0 /* GoogleService-Info.plist */,
-				13B07FAE1A68108700A75B9A /* mmowars */,
+				13B07FAE1A68108700A75B9A /* ReactNativeRealStarter */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* mmowarsTests */,
-				7F5ACE6E24D42D720089DC58 /* mmowarsUITests */,
+				00E356EF1AD99517003FC87E /* ReactNativeRealStarterTests */,
+				7F5ACE6E24D42D720089DC58 /* ReactNativeRealStarterUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				77B240A02CD3319754067206 /* Pods */,
@@ -228,11 +228,11 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* mmowars.app */,
-				00E356EE1AD99517003FC87E /* mmowarsTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* mmowars-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* mmowars-tvOSTests.xctest */,
-				7F5ACE6D24D42D720089DC58 /* mmowarsUITests.xctest */,
+				13B07F961A680F5B00A75B9A /* ReactNativeRealStarter.app */,
+				00E356EE1AD99517003FC87E /* ReactNativeRealStarterTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* ReactNativeRealStarter-tvOSTests.xctest */,
+				7F5ACE6D24D42D720089DC58 /* ReactNativeRealStarterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* mmowarsTests */ = {
+		00E356ED1AD99517003FC87E /* ReactNativeRealStarterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mmowarsTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeRealStarterTests" */;
 			buildPhases = (
 				8B78AD2D14E118805E4FFD13 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -254,14 +254,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = mmowarsTests;
-			productName = mmowarsTests;
-			productReference = 00E356EE1AD99517003FC87E /* mmowarsTests.xctest */;
+			name = ReactNativeRealStarterTests;
+			productName = ReactNativeRealStarterTests;
+			productReference = 00E356EE1AD99517003FC87E /* ReactNativeRealStarterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* mmowars */ = {
+		13B07F861A680F5B00A75B9A /* ReactNativeRealStarter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mmowars" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeRealStarter" */;
 			buildPhases = (
 				3ADEB4683C944336C10DE9E7 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -275,14 +275,14 @@
 			);
 			dependencies = (
 			);
-			name = mmowars;
-			productName = mmowars;
-			productReference = 13B07F961A680F5B00A75B9A /* mmowars.app */;
+			name = ReactNativeRealStarter;
+			productName = ReactNativeRealStarter;
+			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeRealStarter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* mmowars-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mmowars-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeRealStarter-tvOS" */;
 			buildPhases = (
 				0302D6EA8DB0F90281CD2D05 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -295,14 +295,14 @@
 			);
 			dependencies = (
 			);
-			name = "mmowars-tvOS";
-			productName = "mmowars-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* mmowars-tvOS.app */;
+			name = "ReactNativeRealStarter-tvOS";
+			productName = "ReactNativeRealStarter-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* mmowars-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mmowars-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeRealStarter-tvOSTests" */;
 			buildPhases = (
 				B727A208221FC8A097107FD8 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -314,14 +314,14 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "mmowars-tvOSTests";
-			productName = "mmowars-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* mmowars-tvOSTests.xctest */;
+			name = "ReactNativeRealStarter-tvOSTests";
+			productName = "ReactNativeRealStarter-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* ReactNativeRealStarter-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7F5ACE6C24D42D720089DC58 /* mmowarsUITests */ = {
+		7F5ACE6C24D42D720089DC58 /* ReactNativeRealStarterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F5ACE7624D42D720089DC58 /* Build configuration list for PBXNativeTarget "mmowarsUITests" */;
+			buildConfigurationList = 7F5ACE7624D42D720089DC58 /* Build configuration list for PBXNativeTarget "ReactNativeRealStarterUITests" */;
 			buildPhases = (
 				7F5ACE6924D42D720089DC58 /* Sources */,
 				7F5ACE6A24D42D720089DC58 /* Frameworks */,
@@ -332,9 +332,9 @@
 			dependencies = (
 				7F5ACE7324D42D720089DC58 /* PBXTargetDependency */,
 			);
-			name = mmowarsUITests;
-			productName = mmowarsUITests;
-			productReference = 7F5ACE6D24D42D720089DC58 /* mmowarsUITests.xctest */;
+			name = ReactNativeRealStarterUITests;
+			productName = ReactNativeRealStarterUITests;
+			productReference = 7F5ACE6D24D42D720089DC58 /* ReactNativeRealStarterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -369,7 +369,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mmowars" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeRealStarter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -382,11 +382,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* mmowars */,
-				00E356ED1AD99517003FC87E /* mmowarsTests */,
-				2D02E47A1E0B4A5D006451C7 /* mmowars-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* mmowars-tvOSTests */,
-				7F5ACE6C24D42D720089DC58 /* mmowarsUITests */,
+				13B07F861A680F5B00A75B9A /* ReactNativeRealStarter */,
+				00E356ED1AD99517003FC87E /* ReactNativeRealStarterTests */,
+				2D02E47A1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOSTests */,
+				7F5ACE6C24D42D720089DC58 /* ReactNativeRealStarterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -463,7 +463,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mmowars-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeRealStarter-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,7 +499,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mmowars-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeRealStarter-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -531,7 +531,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mmowars-mmowarsTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeRealStarter-ReactNativeRealStarterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -553,7 +553,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mmowars-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeRealStarter-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -605,7 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* mmowarsTests.m in Sources */,
+				00E356F31AD99517003FC87E /* ReactNativeRealStarterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +631,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* mmowarsTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* ReactNativeRealStarterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +639,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5ACE7024D42D720089DC58 /* mmowarsUITests.swift in Sources */,
+				7F5ACE7024D42D720089DC58 /* ReactNativeRealStarterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,17 +648,17 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* mmowars */;
+			target = 13B07F861A680F5B00A75B9A /* ReactNativeRealStarter */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* mmowars-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* ReactNativeRealStarter-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 		7F5ACE7324D42D720089DC58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* mmowars */;
+			target = 13B07F861A680F5B00A75B9A /* ReactNativeRealStarter */;
 			targetProxy = 7F5ACE7224D42D720089DC58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -670,7 +670,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = mmowars;
+			path = ReactNativeRealStarter;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -678,14 +678,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 277D46EAF0A2ADC52C769074 /* Pods-mmowars-mmowarsTests.debug.xcconfig */;
+			baseConfigurationReference = 277D46EAF0A2ADC52C769074 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = mmowarsTests/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -695,17 +695,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mmowars.app/mmowars";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeRealStarter.app/ReactNativeRealStarter";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B7BB8761F8F27206C45ACF0 /* Pods-mmowars-mmowarsTests.release.xcconfig */;
+			baseConfigurationReference = 6B7BB8761F8F27206C45ACF0 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = mmowarsTests/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -715,13 +715,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mmowars.app/mmowars";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeRealStarter.app/ReactNativeRealStarter";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AABFD3251F04ED220551BB9 /* Pods-mmowars.debug.xcconfig */;
+			baseConfigurationReference = 6AABFD3251F04ED220551BB9 /* Pods-ReactNativeRealStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -731,15 +731,15 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = mmowars/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mmowars.debug;
-				PRODUCT_NAME = mmowars;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReactNativeRealStarter.debug;
+				PRODUCT_NAME = ReactNativeRealStarter;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -748,20 +748,20 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 883D4E5F08B8C96941CCD753 /* Pods-mmowars.release.xcconfig */;
+			baseConfigurationReference = 883D4E5F08B8C96941CCD753 /* Pods-ReactNativeRealStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = mmowars/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mmowars;
-				PRODUCT_NAME = mmowars;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReactNativeRealStarter;
+				PRODUCT_NAME = ReactNativeRealStarter;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -769,7 +769,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 081AAF4D42B789031CC9600B /* Pods-mmowars-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 081AAF4D42B789031CC9600B /* Pods-ReactNativeRealStarter-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -780,14 +780,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mmowars-tvOS/Info.plist";
+				INFOPLIST_FILE = "ReactNativeRealStarter-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mmowars-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeRealStarter-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -797,7 +797,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 271D3F81CB64F9548FBC465C /* Pods-mmowars-tvOS.release.xcconfig */;
+			baseConfigurationReference = 271D3F81CB64F9548FBC465C /* Pods-ReactNativeRealStarter-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -808,14 +808,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mmowars-tvOS/Info.plist";
+				INFOPLIST_FILE = "ReactNativeRealStarter-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mmowars-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeRealStarter-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -825,7 +825,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A73CAAB0CE045DB050BB15F /* Pods-mmowars-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 7A73CAAB0CE045DB050BB15F /* Pods-ReactNativeRealStarter-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -835,24 +835,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mmowars-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "ReactNativeRealStarter-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mmowars-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeRealStarter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mmowars-tvOS.app/mmowars-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeRealStarter-tvOS.app/ReactNativeRealStarter-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2133A77542AD19855D14314 /* Pods-mmowars-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = F2133A77542AD19855D14314 /* Pods-ReactNativeRealStarter-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -862,17 +862,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mmowars-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "ReactNativeRealStarter-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mmowars-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeRealStarter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mmowars-tvOS.app/mmowars-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeRealStarter-tvOS.app/ReactNativeRealStarter-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -889,18 +889,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = mmowarsUITests/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarterUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mmowars.nativetesting.mmowarsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReactNativeRealStarter.nativetesting.ReactNativeRealStarterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = mmowars;
+				TEST_TARGET_NAME = ReactNativeRealStarter;
 			};
 			name = Debug;
 		};
@@ -917,16 +917,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = mmowarsUITests/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarterUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mmowars.nativetesting.mmowarsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReactNativeRealStarter.nativetesting.ReactNativeRealStarterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = mmowars;
+				TEST_TARGET_NAME = ReactNativeRealStarter;
 			};
 			name = Release;
 		};
@@ -987,12 +987,12 @@
 		};
 		7F5ACE7824D431AB0089DC58 /* Testing */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AA7BB14C70CCFF9631B882E /* Pods-mmowars.testing.xcconfig */;
+			baseConfigurationReference = 7AA7BB14C70CCFF9631B882E /* Pods-ReactNativeRealStarter.testing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = mmowars/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
@@ -1000,8 +1000,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mmowars.nativetesting;
-				PRODUCT_NAME = mmowars;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReactNativeRealStarter.nativetesting;
+				PRODUCT_NAME = ReactNativeRealStarter;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1009,11 +1009,11 @@
 		};
 		7F5ACE7924D431AB0089DC58 /* Testing */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8235AE0004D3F0ADAA863BB7 /* Pods-mmowars-mmowarsTests.testing.xcconfig */;
+			baseConfigurationReference = 8235AE0004D3F0ADAA863BB7 /* Pods-ReactNativeRealStarter-ReactNativeRealStarterTests.testing.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = mmowarsTests/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1023,13 +1023,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mmowars.app/mmowars";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeRealStarter.app/ReactNativeRealStarter";
 			};
 			name = Testing;
 		};
 		7F5ACE7A24D431AB0089DC58 /* Testing */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCB500B1E7149E090C7C6326 /* Pods-mmowars-tvOS.testing.xcconfig */;
+			baseConfigurationReference = CCB500B1E7149E090C7C6326 /* Pods-ReactNativeRealStarter-tvOS.testing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1040,14 +1040,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mmowars-tvOS/Info.plist";
+				INFOPLIST_FILE = "ReactNativeRealStarter-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mmowars-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeRealStarter-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1057,7 +1057,7 @@
 		};
 		7F5ACE7B24D431AB0089DC58 /* Testing */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8260F9BCA9644B3400DD717 /* Pods-mmowars-tvOSTests.testing.xcconfig */;
+			baseConfigurationReference = F8260F9BCA9644B3400DD717 /* Pods-ReactNativeRealStarter-tvOSTests.testing.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1067,17 +1067,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mmowars-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "ReactNativeRealStarter-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mmowars-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeRealStarter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mmowars-tvOS.app/mmowars-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeRealStarter-tvOS.app/ReactNativeRealStarter-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Testing;
@@ -1095,16 +1095,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = mmowarsUITests/Info.plist;
+				INFOPLIST_FILE = ReactNativeRealStarterUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mmowars.nativetesting.mmowarsUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReactNativeRealStarter.nativetesting.ReactNativeRealStarterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = mmowars;
+				TEST_TARGET_NAME = ReactNativeRealStarter;
 			};
 			name = Testing;
 		};
@@ -1227,7 +1227,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mmowarsTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeRealStarterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1237,7 +1237,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mmowars" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeRealStarter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1247,7 +1247,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mmowars-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeRealStarter-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1257,7 +1257,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mmowars-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeRealStarter-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1267,7 +1267,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F5ACE7624D42D720089DC58 /* Build configuration list for PBXNativeTarget "mmowarsUITests" */ = {
+		7F5ACE7624D42D720089DC58 /* Build configuration list for PBXNativeTarget "ReactNativeRealStarterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F5ACE7424D42D720089DC58 /* Debug */,
@@ -1277,7 +1277,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mmowars" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeRealStarter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

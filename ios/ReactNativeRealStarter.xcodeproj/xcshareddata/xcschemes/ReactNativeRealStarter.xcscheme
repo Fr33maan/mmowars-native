@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "mmowars.app"
-               BlueprintName = "mmowars"
-               ReferencedContainer = "container:mmowars.xcodeproj">
+               BuildableName = "ReactNativeRealStarter.app"
+               BlueprintName = "ReactNativeRealStarter"
+               ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "mmowarsTests.xctest"
-               BlueprintName = "mmowarsTests"
-               ReferencedContainer = "container:mmowars.xcodeproj">
+               BuildableName = "ReactNativeRealStarterTests.xctest"
+               BlueprintName = "ReactNativeRealStarterTests"
+               ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7F5ACE6C24D42D720089DC58"
-               BuildableName = "mmowarsUITests.xctest"
-               BlueprintName = "mmowarsUITests"
-               ReferencedContainer = "container:mmowars.xcodeproj">
+               BuildableName = "ReactNativeRealStarterUITests.xctest"
+               BlueprintName = "ReactNativeRealStarterUITests"
+               ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "mmowars.app"
-            BlueprintName = "mmowars"
-            ReferencedContainer = "container:mmowars.xcodeproj">
+            BuildableName = "ReactNativeRealStarter.app"
+            BlueprintName = "ReactNativeRealStarter"
+            ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "mmowars.app"
-            BlueprintName = "mmowars"
-            ReferencedContainer = "container:mmowars.xcodeproj">
+            BuildableName = "ReactNativeRealStarter.app"
+            BlueprintName = "ReactNativeRealStarter"
+            ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

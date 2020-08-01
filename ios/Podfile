@@ -44,8 +44,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'mmowars' do
-  # Pods for mmowars
+target 'ReactNativeRealStarter' do
+  # Pods for ReactNativeRealStarter
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -77,7 +77,7 @@ target 'mmowars' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'mmowarsTests' do
+  target 'ReactNativeRealStarterTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -94,10 +94,10 @@ target 'mmowars' do
   end
 end
 
-target 'mmowars-tvOS' do
-  # Pods for mmowars-tvOS
+target 'ReactNativeRealStarter-tvOS' do
+  # Pods for ReactNativeRealStarter-tvOS
 
-  target 'mmowars-tvOSTests' do
+  target 'ReactNativeRealStarter-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

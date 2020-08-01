@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "mmowars-tvOS.app"
-               BlueprintName = "mmowars-tvOS"
-               ReferencedContainer = "container:mmowars.xcodeproj">
+               BuildableName = "ReactNativeRealStarter-tvOS.app"
+               BlueprintName = "ReactNativeRealStarter-tvOS"
+               ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "mmowars-tvOSTests.xctest"
-               BlueprintName = "mmowars-tvOSTests"
-               ReferencedContainer = "container:mmowars.xcodeproj">
+               BuildableName = "ReactNativeRealStarter-tvOSTests.xctest"
+               BlueprintName = "ReactNativeRealStarter-tvOSTests"
+               ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "mmowars-tvOS.app"
-            BlueprintName = "mmowars-tvOS"
-            ReferencedContainer = "container:mmowars.xcodeproj">
+            BuildableName = "ReactNativeRealStarter-tvOS.app"
+            BlueprintName = "ReactNativeRealStarter-tvOS"
+            ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "mmowars-tvOS.app"
-            BlueprintName = "mmowars-tvOS"
-            ReferencedContainer = "container:mmowars.xcodeproj">
+            BuildableName = "ReactNativeRealStarter-tvOS.app"
+            BlueprintName = "ReactNativeRealStarter-tvOS"
+            ReferencedContainer = "container:ReactNativeRealStarter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

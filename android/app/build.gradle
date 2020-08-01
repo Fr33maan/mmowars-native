@@ -138,7 +138,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mmowars"
+        applicationId "org.rnrealstarter"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
