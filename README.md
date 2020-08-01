@@ -1,6 +1,6 @@
 # Goal of repo
 
-To provide a way to easily automate building and distribution of react native apps built by github actions.
+Opinionated React-Native boilerplate, already hot, ready for profuction.
 
 # What does it handle for you
 
