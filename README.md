@@ -14,6 +14,8 @@ Opinionated React-Native boilerplate, already hot, ready for profuction.
 
 ## ReactNative
 
+- provide `GoogleService-Info.plist` for development with your bundle identifier and paste it in `ios/`
+- provide `api-google-service-account.json` for developement with your bundle identifier and place it in `android/app/`
 - create a babel.config.js containing the `babel-plugin-module-resolver` config and place it in the ui repo under `native` directory as following:
 
 ```
