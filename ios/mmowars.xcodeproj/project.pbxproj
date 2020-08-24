@@ -18,6 +18,8 @@
 		6A8035B4651182A24399A57C /* libPods-mmowars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC9C402DEBCFA2E9BBDF65CA /* libPods-mmowars.a */; };
 		7F62EBCC24D06478007213C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F62EBCB24D06478007213C0 /* GoogleService-Info.plist */; };
 		7F72B48C24D5C3B8005F1BEF /* mmowarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72B48B24D5C3B8005F1BEF /* mmowarsTests.swift */; };
+		A5A7FD4724F368CC009A15B0 /* mmowarsScreenshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7FD4624F368CC009A15B0 /* mmowarsScreenshotUITests.swift */; };
+		A5A7FD5024F36904009A15B0 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A7FD4F24F36904009A15B0 /* SnapshotHelper.swift */; };
 		C18642229783A28E1AA4EC38 /* libPods-mmowars-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1C67E06CE08C1265F46727 /* libPods-mmowars-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,13 @@
 			remoteInfo = "mmowars-tvOS";
 		};
 		7F72B48E24D5C3B8005F1BEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = mmowars;
+		};
+		A5A7FD4924F368CC009A15B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
@@ -62,6 +71,10 @@
 		7F72B48D24D5C3B8005F1BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883D4E5F08B8C96941CCD753 /* Pods-mmowars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars.release.xcconfig"; path = "Target Support Files/Pods-mmowars/Pods-mmowars.release.xcconfig"; sourceTree = "<group>"; };
 		89D87F5A769C42E68721D61A /* libPods-mmowars-mmowarsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars-mmowarsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7FD4424F368CC009A15B0 /* mmowarsScreenshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mmowarsScreenshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A7FD4624F368CC009A15B0 /* mmowarsScreenshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mmowarsScreenshotUITests.swift; sourceTree = "<group>"; };
+		A5A7FD4824F368CC009A15B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A7FD4F24F36904009A15B0 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		AC9C402DEBCFA2E9BBDF65CA /* libPods-mmowars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F6255489C67F49C7354B19 /* libPods-mmowars-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mmowars-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CFC7EE47B8B8041970C87D /* Pods-mmowars-mmowarsTests.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmowars-mmowarsTests.testing.xcconfig"; path = "Target Support Files/Pods-mmowars-mmowarsTests/Pods-mmowars-mmowarsTests.testing.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +115,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6AC94E645C969C4329AE5D /* libPods-mmowars-mmowarsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A7FD4124F368CC009A15B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +196,7 @@
 				13B07FAE1A68108700A75B9A /* mmowars */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				7F72B48A24D5C3B8005F1BEF /* mmowarsTests */,
+				A5A7FD4524F368CC009A15B0 /* mmowarsScreenshotUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				77B240A02CD3319754067206 /* Pods */,
@@ -192,8 +213,19 @@
 				2D02E47B1E0B4A5D006451C7 /* mmowars-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* mmowars-tvOSTests.xctest */,
 				7F72B48924D5C3B8005F1BEF /* mmowarsTests.xctest */,
+				A5A7FD4424F368CC009A15B0 /* mmowarsScreenshotUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A5A7FD4524F368CC009A15B0 /* mmowarsScreenshotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5A7FD4F24F36904009A15B0 /* SnapshotHelper.swift */,
+				A5A7FD4624F368CC009A15B0 /* mmowarsScreenshotUITests.swift */,
+				A5A7FD4824F368CC009A15B0 /* Info.plist */,
+			);
+			path = mmowarsScreenshotUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +312,24 @@
 			productReference = 7F72B48924D5C3B8005F1BEF /* mmowarsTests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A5A7FD4324F368CC009A15B0 /* mmowarsScreenshotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A7FD4E24F368CC009A15B0 /* Build configuration list for PBXNativeTarget "mmowarsScreenshotUITests" */;
+			buildPhases = (
+				A5A7FD4024F368CC009A15B0 /* Sources */,
+				A5A7FD4124F368CC009A15B0 /* Frameworks */,
+				A5A7FD4224F368CC009A15B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5A7FD4A24F368CC009A15B0 /* PBXTargetDependency */,
+			);
+			name = mmowarsScreenshotUITests;
+			productName = mmowarsScreenshotUITests;
+			productReference = A5A7FD4424F368CC009A15B0 /* mmowarsScreenshotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -306,6 +356,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					A5A7FD4324F368CC009A15B0 = {
+						CreatedOnToolsVersion = 11.6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mmowars" */;
@@ -325,6 +380,7 @@
 				7F72B48824D5C3B8005F1BEF /* mmowarsTests */,
 				2D02E47A1E0B4A5D006451C7 /* mmowars-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* mmowars-tvOSTests */,
+				A5A7FD4324F368CC009A15B0 /* mmowarsScreenshotUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,6 +411,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7F72B48724D5C3B8005F1BEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A7FD4224F368CC009A15B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -600,6 +663,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5A7FD4024F368CC009A15B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A7FD4724F368CC009A15B0 /* mmowarsScreenshotUITests.swift in Sources */,
+				A5A7FD5024F36904009A15B0 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -612,6 +684,11 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* mmowars */;
 			targetProxy = 7F72B48E24D5C3B8005F1BEF /* PBXContainerItemProxy */;
+		};
+		A5A7FD4A24F368CC009A15B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* mmowars */;
+			targetProxy = A5A7FD4924F368CC009A15B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1101,6 +1178,85 @@
 			};
 			name = Release;
 		};
+		A5A7FD4B24F368CC009A15B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = mmowarsScreenshotUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmowarsScreenshotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mmowars;
+			};
+			name = Debug;
+		};
+		A5A7FD4C24F368CC009A15B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = mmowarsScreenshotUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmowarsScreenshotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mmowars;
+			};
+			name = Release;
+		};
+		A5A7FD4D24F368CC009A15B0 /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = mmowarsScreenshotUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mmowarsScreenshotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mmowars;
+			};
+			name = Testing;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1150,6 +1306,16 @@
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
 				7F72B49324D5C3EB005F1BEF /* Testing */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A7FD4E24F368CC009A15B0 /* Build configuration list for PBXNativeTarget "mmowarsScreenshotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A7FD4B24F368CC009A15B0 /* Debug */,
+				A5A7FD4C24F368CC009A15B0 /* Release */,
+				A5A7FD4D24F368CC009A15B0 /* Testing */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
