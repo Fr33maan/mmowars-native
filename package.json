@@ -17,7 +17,7 @@
 		"axios": "^0.19.2",
 		"rambda": "^5.10.0",
 		"react": "16.13.1",
-		"react-native": "0.63.2",
+		"react-native": "0.64.1",
 		"react-native-code-push": "^6.3.0",
 		"react-native-device-info": "^5.6.3",
 		"react-native-gesture-handler": "^1.7.0",
